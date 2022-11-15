@@ -63,3 +63,91 @@
     height: 100%;
     padding: 0 1rem;
 }
+
+.navbar-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    width: 100%;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #3C6A36;
+    color: #ffffff;
+}
+
+.button:hover{
+    background: brown;
+    transition: all 0.3s ease;
+}
+
+    
+
+/* Responsive CSS for navbar */
+
+@media screen and (max-width: 1044px){
+    .navbar-container{
+        display: flex;
+        justify-content: space-between;
+        height: 90px;
+        z-index: 1;
+        width: 100%;
+        max-width: 1300px;
+        padding: 0;
+    }
+    .navbar-menu{
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        /* top: -1000px;
+        opacity: 0; */
+        transition: all 0.5s ease;
+        height: 50vh;
+        z-index: -1;
+
+    }
+
+    .navbar-menu.active{
+        background: ;
+        top: 100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 99;
+        height: 50vh;
+        font-size: 1.6rem;
+    }
+
+    #mobile-menu{
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        transform: translate(5%, 20%);
+    }
+    
+    .navbar-btn{
+        padding-bottom: 2rem;        
+    }
+
+    .button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: 90px;
+        margin: 0;
+    }
+
+}
